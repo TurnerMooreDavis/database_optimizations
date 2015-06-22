@@ -7,3 +7,8 @@ after indices: about 2 seconds to load
 second seed time: 2190 seconds
 
 end time 5:30
+database size: 575 mb
+dev log size: 1.47 gb
+
+remove free space in the database
+this database is a little smaller than the one I think i might be working on, but honestly I dont know.  Depending on where I work the amounts of data could be vastly different.
