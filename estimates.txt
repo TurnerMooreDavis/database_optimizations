@@ -1,0 +1,9 @@
+normal mode: 3 hours
+start 2:00pm
+initial time: 37:35
+load index page 2:44
+run migrations for indices: about 5 seconds
+after indices: about 2 seconds to load
+second seed time: 2190 seconds
+
+end time 5:30
