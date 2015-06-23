@@ -8,7 +8,7 @@ class SendSequencesMailer < ApplicationMailer
   def data(name, email)
     @greeting = "Hi"
     @assembly = Assembly.find_by_name(name)
-    @hits = Hit.where(subject_id: Gene.where(sequence_id: Sequence.where(assembly_id: @assembly.id))).order("percent_similarity DESC")
+    @hits = Hit.where(subject_id: Gene.where(sequence_id: Sequence.where(assembly_id: @assembly.id))).order("percent_similarity")
     mail to: email
   end
 end
