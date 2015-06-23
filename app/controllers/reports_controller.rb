@@ -4,7 +4,9 @@ class ReportsController < ApplicationController
     @hits = Hit.where(subject_id: Gene.where(sequence_id: Sequence.where(assembly_id: @assembly.id))).order("percent_similarity DESC")
   end
   def welcome
-    @data = params
-    SendSequencesMailer.data.deliver_now
+    if request.post?
+      @data = params
+      SendSequencesMailer.data(params[:name], params[:email]).deliver_later
+    end
   end
 end
