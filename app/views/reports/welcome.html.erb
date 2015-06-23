@@ -1,0 +1,9 @@
+Welcome
+<% if request.get? %>
+  <%= form_tag reports_welcome_path %>
+  <%=text_field_tag "email" %>
+  <%=text_field_tag "name" %>
+  <%= submit_tag %>
+<% else %>
+  <%= @data %>
+<% end %>
