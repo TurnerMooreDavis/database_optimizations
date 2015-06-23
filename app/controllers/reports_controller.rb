@@ -5,5 +5,6 @@ class ReportsController < ApplicationController
   end
   def welcome
     @data = params
+    SendSequencesMailer.data.deliver_now
   end
 end
